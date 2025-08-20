@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: "Poppins", "Roboto", Arial, sans-serif;
+  color: #333;
+}
+
+.botao1,
+.botao2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.botao1 button,
+.botao2 button {
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 28px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.botao1 button:hover,
+.botao2 button:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.header p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #f1f1f1;
+  margin: 0;
+}

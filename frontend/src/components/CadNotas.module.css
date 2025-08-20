@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: "Poppins", "Roboto", Arial, sans-serif;
+  color: #333;
+}
+
+/* -------- Header -------- */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #fff;
+  border-bottom: 3px solid #004080;
+}
+
+.header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* -------- Pesquisa -------- */
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 20px auto;
+}
+
+.inputs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inputs input {
+  width: 200px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.inputs input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.4);
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.buttons button {
+  width: 120px;
+  height: 40px;
+  background: #3498db;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+  background: #3cb0fd;
+  transform: scale(1.05);
+}
+
+/* Botão vermelho */
+.btVoltar {
+  background: #c0392b !important;
+}
+
+.btVoltar:hover {
+  background: #e74c3c !important;
+}
+
+/* -------- Formulário -------- */
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.comBorda {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.formTitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.formulario select,
+.formulario input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+.formulario select:focus,
+.formulario input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.4);
+}
+
+/* Botões de ação */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.buttonContainer button {
+  border: none;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #2980b9;
+}
+
+.buttonContainer button:hover {
+  background: #3498db;
+  transform: scale(1.05);
+}
+
+/* Botão excluir dentro da tabela */
+.tabelaNotas button {
+  background: #c0392b;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabelaNotas button:hover {
+  background: #e74c3c;
+  transform: scale(1.05);
+}
+
+/* -------- Tabela -------- */
+.tabelaNotas {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+.tabelaNotas table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.tabelaNotas th {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tabelaNotas td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.tabelaNotas tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabelaNotas tr:hover {
+  background-color: #f1faff;
+}
