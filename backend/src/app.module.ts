@@ -12,7 +12,7 @@ import { NotasModule } from './notas/notas.module';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: 'verzide7878',
+      password: '******',
       database: 'crubG4tech_db',
       entities: [Aluno, Nota],
       synchronize: true,
